@@ -26,13 +26,19 @@ export default function NotificationBell() {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const socket = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:3000', {
+        const socketUrl = import.meta.env.VITE_SOCKET_URL
+            || 'http://localhost:3000';
+
+        const socket = io(socketUrl, {
             auth: { token: `Bearer ${token}` },
+            transports: ['polling', 'websocket'],  // ← polling first, then upgrade
+            withCredentials: true,
         });
 
+        socket.on('connect', () => console.log('Socket connected'));
+        socket.on('connect_error', (err) => console.error('Socket error:', err.message));
         socket.on('notification', (n) => {
             toast(n.message, { icon: '🔔' });
-            // Invalidate so the list refreshes
             queryClient.invalidateQueries({ queryKey: ['notifications'] });
         });
 
