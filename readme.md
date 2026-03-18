@@ -6,7 +6,7 @@ A full-stack SaaS Task Management application built with **Node.js**, **Express*
 
 ## 🌐 Live Demo
 
-- **Frontend:** [https://saas-task-management-api.vercel.app](https://saas-task-management-api.vercel.app)
+- **Frontend:** [https://saas-task-manager.netlify.app/](https://saas-task-manager.netlify.app/)
 - **Backend API:** [https://saas-task-management-api.onrender.com](https://saas-task-management-api.onrender.com)
 - **API Docs (Swagger):** [https://saas-task-management-api.onrender.com/api-docs](https://saas-task-management-api.onrender.com/api-docs)
 
@@ -138,7 +138,7 @@ SaaS Task Management API/
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/saas-task-management-api.git
+git clone https://github.com/abdoBadawy74/Saas-Task-Management-Api.git
 cd saas-task-management-api
 
 # Install dependencies
@@ -224,7 +224,20 @@ Refresh Expired → Redirect to Login
 
 ## 📸 Screenshots
 
-> Dashboard, Tasks, Teams, Notifications, Admin pages
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Tasks
+![Tasks](screenshots/tasks.png)
+
+### Teams
+![Teams](screenshots/teams.png)
+
+### Notifications
+![Teams](screenshots/notifications.png)
+
+### Admin Dashboard
+![Teams](screenshots/admin-dashboard.png)
 
 ---
 
@@ -234,14 +247,8 @@ Pull requests are welcome. For major changes, please open an issue first.
 
 ---
 
-## 📄 License
-
-MIT
-
----
-
 ## 👤 Author
 
-**Your Name**
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- GitHub: [github.com/yourusername](https://github.com/yourusername)
+**Abdulrahman Badawy**
+- LinkedIn: [Abdulrahman Badawy](https://www.linkedin.com/in/abdulrahman-badawy-7bb072258/)
+- GitHub: [abdoBadawy74](https://github.com/abdoBadawy74)
