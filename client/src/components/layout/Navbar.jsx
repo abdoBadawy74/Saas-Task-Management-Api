@@ -1,5 +1,5 @@
-import { useAuth } from '../../context/AuthContext';
-import NotificationBell from '../notifications/NotificationBell';
+import { useAuth } from "../../context/AuthContext";
+import NotificationBell from "../notifications/NotificationBell";
 
 export default function Navbar({ title = '' }) {
     const { user } = useAuth();
@@ -7,7 +7,8 @@ export default function Navbar({ title = '' }) {
     return (
         <header className="h-16 bg-slate-900/50 backdrop-blur border-b border-slate-700/50
                            flex items-center justify-between px-6 flex-shrink-0">
-            <h1 className="text-white font-semibold text-lg">{title}</h1>
+            {/* Extra left padding on mobile for hamburger button */}
+            <h1 className="text-white font-semibold text-lg pl-10 md:pl-0">{title}</h1>
 
             <div className="flex items-center gap-3">
                 <NotificationBell />
