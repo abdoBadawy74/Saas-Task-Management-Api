@@ -47,3 +47,4 @@ https://saas-task-management-api.onrender.com/api-docs/
 فيه حاجه مش مظبوطه 
 حالة التاسك مش موجوده في الايديت 
 الكومنتات م ظاهره لسه 
+MONGO_URI=mongodb+srv://badawishii74_db_user:bY4vK1hA3ehLYEHg@cluster0.tvjlsnx.mongodb.net/?appName=Cluster0
